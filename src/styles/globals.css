@@ -2,3 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 @import url('./loading.css');
+/* @import url('swiper/swiper.min.css') */
+
+.hero-slide {
+  height: 300px !important;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.slide-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-slider .content {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-slide {
+    height: 200px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-slide {
+    height: 150px !important;
+  }
+}

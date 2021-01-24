@@ -1,7 +1,22 @@
 import axios from 'axios';
-import { getData } from '../../server/utils/fetchData';
+import Head from 'next/head';
+
+import Container from '../components/Container';
+import Product from '../components/Product';
+import Slider from '../components/Slider';
+
 const Home = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Head>
+        <title>Wafishop - Online Shop</title>
+      </Head>
+      <Container className=''>
+        <Slider />
+        <Product />
+      </Container>
+    </div>
+  );
 };
 
 export async function getServerSideProps() {

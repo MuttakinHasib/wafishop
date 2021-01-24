@@ -50,7 +50,7 @@ const Navbar = () => {
                 </div>
               </div> */}
           </div>
-          <div className='absolute space-x-3 inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6'>
+          <div className='absolute space-x-5 inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6'>
             <Link href='/cart'>
               <a>
                 <IconButton title='Cart' sr='View Carts'>
@@ -128,13 +128,15 @@ const Navbar = () => {
                     aria-orientation='vertical'
                     aria-labelledby='user-menu'
                   >
-                    <a
-                      href='/'
-                      className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'
-                      role='menuitem'
-                    >
-                      Your Profile
-                    </a>
+                    <Link href='/profile'>
+                      <a
+                        className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'
+                        role='menuitem'
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Your Profile
+                      </a>
+                    </Link>
                     <a
                       href='/'
                       className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'

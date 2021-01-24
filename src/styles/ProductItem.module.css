@@ -1,0 +1,40 @@
+.productCard {
+  width: 100%;
+  height: 100%;
+}
+
+/* .productImage { */
+/* position: relative; */
+/* width: 30%; */
+/* padding-bottom: 95%; = width for a 1:1 aspect ratio */
+/* margin:1.66%; */
+/* background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+/* } */
+
+.productImage {
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 90%;
+  /* padding controls height, will always be perfectly square regardless of width */
+  position: relative;
+}
+
+.image {
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.productInfo,
+.cardButton {
+  border: 1px solid #eee;
+  /* border-top: none; */
+}
+
+.productDescription {
+  padding: 20px;
+}

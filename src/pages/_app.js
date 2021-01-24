@@ -1,8 +1,11 @@
 import Layout from '../components/Layout';
-import '../styles/globals.css';
-import 'react-toastify/dist/ReactToastify.css';
+
 import { Provider } from 'react-redux';
 import { store } from '../store';
+
+import 'antd/dist/antd.css';
+import '../styles/globals.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 function MyApp({ Component, pageProps }) {
   return (
